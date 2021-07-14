@@ -1,0 +1,97 @@
+/*------------Episodios start----------------------*/
+main {
+    #Episodios{
+
+        position: relative;
+        height: 1203.5px;
+        &::after{
+            display: block;
+            background: $bg-skew;
+            position: absolute;
+            content:'';
+            top:80px;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            transform: skewY(-5deg);
+        }
+        h2{
+            margin-left: 16px;
+            margin-top: 0;
+            padding-top: 101px;
+            color:$subtitle-color;
+            font-size: 36px;
+            font-family: $title-font;
+            line-height: 48px;
+        }
+
+
+    .podcasts-list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 320px;
+        height: 1235px;
+        padding: 20px 16px;
+    
+         
+            z-index: 2;
+        }
+
+        
+
+    
+    .podcasts-list {
+        min-width: 288px;
+        margin: 0 auto;
+        height: max-content;
+        .episodio {
+            
+            iframe {
+                width: 100%;
+                height: 232px;
+                margin-bottom: 16px;
+                line-height: 0;
+                border: 0;
+                background-color: transparent;
+            }
+        }
+    }
+
+}
+}
+/*------------Episodios end----------------------*/
+
+
+/*------------Media Querie---------------------*/
+
+
+@media screen and (min-width: 1024px) {
+    main {
+        #Episodios{
+            height: 800px;
+            h2{
+                margin-left: 200px;
+                padding-top: 141px;
+                font-size: 48px;
+                line-height:62px;
+            }
+        
+            .podcasts-list {
+                display: flex;
+                flex-direction: unset;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .episodio {
+                    width: 47%;
+                    max-width: 584px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+/*------------Media Querie---------------------*/

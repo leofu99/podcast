@@ -1,0 +1,80 @@
+
+/*------------------------- inicio news ------------------------*/
+main {
+    .call-to-action {
+        background: $bg-skew;
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+        padding-bottom: 67px;
+        z-index: -1;
+    }
+    .news-container{
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        min-width: 320px;
+        h2,
+        .btn2{
+            position: relative;
+            z-index: 2;
+        }
+        h2{
+            width: 90%;
+            min-width: 288px;;
+            padding-top: 64px;
+            font-family: $title-font;
+            font-size: 3.6rem;
+            font-weight: 400;
+            line-height: 4.2rem;
+            color: white;
+            text-align: center;
+        }
+        .btn2 {
+            display: block;
+            align-self: center;
+            width: 100%;
+            max-width: 288px;
+            height: 48px;
+            margin-top: 36px;
+            padding: 13px 40px;
+            background-color:$secondary-color;
+            font-family: $paragraph-font;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2.2rem;
+            color: $font-color;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            outline: none;
+    
+            &:hover {
+                background: $tertiary-color;
+                color: white;
+            }
+        }
+    }
+}
+
+/*------------------------- fin news ------------------------*/
+
+/*------------------ media querie 1024px news -----------------------*/
+
+@media screen and (min-width: 1024px) {
+    main {
+        .news-container{
+            h2{
+                font-size: 4.8rem;
+                line-height: 6.2rem;
+            }
+            .btn2{  
+                padding: 10px 30px;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+        }
+    }    
+}
+
+/*------------------ fin media querie news -----------------------*/

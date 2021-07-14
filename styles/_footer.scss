@@ -1,0 +1,60 @@
+
+/*--------------------footer  start----------------------*/
+
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    padding: 24px 5% 31px;
+
+        h2{
+            min-width: 230px;
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-family: $paragraph-font;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            color: $font-color;
+            text-align: center;
+        }
+        .redes{
+            .icon-f {
+                padding-right: 38px;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                color: $font-color;
+                &:last-of-type {
+                padding-right: 0;
+                }
+            }
+        }
+    
+}
+
+/*-------------------- footer end----------------------*/
+
+/*---------------------- media querie 1024 footer ------------------------*/
+
+@media screen and (min-width: 1024px) {
+    footer {
+       
+            flex-direction: row;
+            justify-content: space-between;
+            h2{
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+            }
+            .redes {
+                .icon-f {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    
+}
+
+/*---------------------end media querie footer ------------------------*/
+
+
